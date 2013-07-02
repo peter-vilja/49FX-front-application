@@ -1,0 +1,165 @@
+@import "compass/css3/images"
+@import "compass/css3/transition"
+@import "compass/css3/background-size"
+@import "compass/css3/border-radius"
+@import "general"
+@import "message"
+@import "save"
+
+body
+	background-color: #F0F3F6
+	//@include background(linear-gradient(135deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 80%, transparent 75%, transparent))
+	//background-attachment: fixed
+	//@include background-size(5px 5px)
+
+.background
+	background-image: url('../images/background.jpg')
+	background-repeat: no-repeat
+	background-position: 0px -160px
+	width: 960px
+	height: 470px
+	margin: 0 auto
+	box-shadow: inset 50px 0px 90px 10px #F0F3F6, inset -50px 0px 90px 10px #F0F3F6
+
+// .team
+// 	width: 200px
+// 	height: 400px
+// 	position: fixed
+// 	margin: -78px 0px 0px 60px
+// 	.picture
+// 		@include background-image(linear-gradient(-40deg, rgb(0, 132, 224), rgb(0, 173, 236)))
+// 		@include border-radius(50px)
+// 		width: 100px
+// 		height: 100px
+// 		margin-left: 50px
+// 		font-family: FontAwesome
+// 		font-weight: normal
+// 		font-style: normal
+// 		text-decoration: inherit
+// 		-webkit-font-smoothing: antialiased
+
+// 		.anchor
+// 			margin-left: 25px
+// 			padding-top: 15px
+// 			color: #f0f3f6 
+// 			font-size: 50px
+// 			&:before
+// 				content: "\f13d"
+
+// 		.role
+// 			margin-left: 25px
+// 			font-weight: bold
+// 			color: #f0f3f6
+
+header
+	&.topbar
+		height: 40px
+		box-shadow: inset 0 0 0 1px #f9f9f9,inset 0 -17px 13px -21px #000
+		@include background-image(linear-gradient(235deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 80%, transparent 75%, transparent))
+		background-attachment: fixed
+		@include background-size(5px 5px)
+		background-color: #DDD
+		margin: 0 auto
+	&.log
+		margin: -140px 0px 89px 315px
+		color: #f1f1f1
+		.log
+			margin-left: 120px
+		.sail
+			font-size: 35px
+			font-weight: bold
+			font-style: italic
+
+.page-wrap
+	margin: -85px auto
+	max-width: 870px
+	border: 1px solid #ddd
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 10px, inset 0 0 0 1px #f9f9f9, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px 
+	min-height: 400px
+	background-color: white
+	//@include background(linear-gradient(#F8F8F8, white, #F8F8F8))
+	> * 
+		margin: 0 0 0 20px
+
+.about
+	background-color: #505459
+	color: #fff
+	height: 1000px
+	width: 100%
+	margin-top: 100px
+	box-shadow: indianred 0px -3px 1px
+
+	.team, .boat
+		margin: auto
+		max-width: 715px
+		padding-top: 40px
+
+	.team
+		.left, .right
+			float: left
+			width: 320px
+			text-align: center
+			.image
+				background-repeat: no-repeat
+				@include border-radius(50px)
+				width: 250px
+				height: 200px
+				margin: auto
+			.description
+				margin-top: 20px
+
+		.right
+			margin-left: 50px
+			.image
+				background-image: url('../images/background.jpg')
+				background-position: -480px -160px
+		.left
+			.image
+				background-image: url('../images/background.jpg')
+				background-position: -480px -160px
+
+	.boat
+		margin-top: 440px
+		.left, .right
+			float: left
+			width: 320px
+			text-align: center
+		.left
+			color: #eee
+			font-size: 470px
+			max-height: 415px
+			overflow: hidden
+		.right
+			width: 250px
+			margin-left: 30px
+	
+
+@font-face
+	font-family: 'FontAwesome'
+	src: url('fonts/fontawesome-webfont.eot')
+	src: url('fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype')
+	src: url('fonts/fontawesome-webfont.woff') format('woff')
+	src: url('fonts/fontawesome-webfont.ttf') format('truetype')
+	src: url('fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'icomoon'
+	src: url('fonts/icomoon.eot')
+	src: url('fonts/icomoon.eot?#iefix') format('embedded-opentype')
+	src: url('fonts/icomoon.woff') format('woff')
+	src: url('fonts/icomoon.ttf') format('truetype')
+	src: url('fonts/icomoon.svg#icomoon') format('svg')
+	font-weight: normal
+	font-style: normal
+
+[data-icon]:before
+	font-family: 'icomoon'
+	content: attr(data-icon)
+	speak: none
+	font-weight: normal
+	font-variant: normal
+	text-transform: none
+	line-height: 1
+	-webkit-font-smoothing: antialiased

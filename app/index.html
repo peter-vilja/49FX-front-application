@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <header class="topbar"></header>
+        <div class="background"></div>
+        <!-- <div class="team">
+            <div class="picture">
+                <div class="anchor"></div>
+                <div class="role">GASTI</div>
+            </div>
+        </div> -->
+        <header class="log"><div class="sail">SAILING</div><div class="log">LOG</div></header>
+        <div class="page-wrap">
+            
+            <section id="fx-messages"></section>
+            <section id="fx-add" class="fx-add">
+                <div class="icons">
+                    <div class="icon brown" data-icon="&#xe002;"></div>
+                    <div class="icon gold" data-icon="&#xe003;"></div>
+                    <div class="icon gold" data-icon="&#xe004;"></div>
+                    <div class="icon yellow" data-icon="&#xe008;"></div>
+                    <div class="icon yellow" data-icon="&#xe009;"></div>
+                    <div class="icon grey" data-icon="&#xe00a;"></div>
+                    <div class="icon blue" data-icon="&#xe00b;"></div>
+                    <div class="icon" data-icon="&#xe00c;"></div>
+                    <div class="icon grey" data-icon="&#xe00d;"></div>
+                    <div class="icon darkblue" data-icon="&#xe00f;"></div>
+                    <div class="icon grey" data-icon="&#xe010;"></div>
+                    <div class="icon gold" data-icon="&#xe011;"></div>
+                    <div class="icon red" data-icon="&#xe012;"></div>
+                    <div class="icon" data-icon="&#xe013;"></div>
+                    <div class="icon" data-icon="&#xe014;"></div>
+                    <div class="icon red" data-icon="&#xe015;"></div>
+                </div>
+                <div class="add">
+                    <textarea id="story" cols="40" rows="7"></textarea>
+                    <span id="save" class="save">SAVE</span>
+                </div>
+            </section>
+        </div>
+
+        <div class="about">
+                <div class="team">
+                    <div class="left">
+                        <div class="image"></div>
+                        <div class="description">
+                            The amount of logging is controlled by the logLevel setting, which takes values from the Level enumeration. Valid values are Error, Warn, Info, and Debug in order of increasing verbosity. The logging level may be configured globally, as described in the previous section, or it may be applied to a specific project, configuration, or task. For example, to change the logging level for compilation to only show warnings and errors:
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="image"></div>
+                        <div class="description">
+                            The amount of logging is controlled by the logLevel setting, which takes values from the Level enumeration. Valid values are Error, Warn, Info, and Debug in order of increasing verbosity. The logging level may be configured globally, as described in the previous section, or it may be applied to a specific project, configuration, or task. For example, to change the logging level for compilation to only show warnings and errors:
+                        </div>
+                    </div>
+                </div>
+                <div class="boat">
+                    <div class="left" data-icon="&#xe016;"></div>
+                    <div class="right">
+                        <div class="info">
+                            The 49er is a two-handed skiff-type high-performance sailing dinghy. The two crew work on different roles with the helm making many tactical decisions, as well as steering, and the crew doing most of the sail control. Both of the crew are equipped with their own trapeze and sailing is handled while "flying".
+                            The 49er was designed by Julian Bethwaite, the son of Frank Bethwaite, designer of the popular Tasar and Laser 2 classes. The boat was selected by the International Sailing Federation after a series of trials for a high performance two person skiff and has been in every olympics since its debut in Sydney Olympics of 2000.
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <script id="message-template" type="text/x-handlebars-template">
+            <div class="time">
+                <div class="month">{{month}}</div>
+                <div class="day">{{day}}</div>
+                <div class="message-icon" data-icon="{{icon}}"></div>
+            </div>
+            <span class="message">{{message}}</span>
+        </script>
+                
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+        <!-- build:js scripts/main.js -->
+        <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>
