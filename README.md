@@ -23,7 +23,7 @@ $ grunt test
 
 ## Tech Stack ##
 
-Management and tasks
+### Management and tasks ###
  - bower
  - grunt
 
