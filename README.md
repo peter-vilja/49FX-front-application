@@ -27,18 +27,18 @@ $ grunt test
  - bower
  - grunt
 
-Application
+### Application ###
  - requirejs
  - backbone
  - handlebars
  - underscore
  - jquery
 
-Testing
+### Testing ###
  - mocha
  - chai
  - expect
  - phantomjs (later)
 
-Styles
+### Styles ###
  - sass & compass
