@@ -13,10 +13,32 @@ $ grunt
 $ grunt server
 ```
 
+If `grunt server` doesn't launch your browser, manually open [http://localhost:9000/](http://localhost:9000/) in your browser.
+
 ## Test ##
 
 ```sh
 $ grunt test
 ```
 
-If `grunt server` doesn't launch your browser, manually open [http://localhost:9000/](http://localhost:9000/) in your browser.
+## Tech Stack ##
+
+Management and tasks
+ - bower
+ - grunt
+
+Application
+ - requirejs
+ - backbone
+ - handlebars
+ - underscore
+ - jquery
+
+Testing
+ - mocha
+ - chai
+ - expect
+ - phantomjs (later)
+
+Styles
+ - sass & compass
