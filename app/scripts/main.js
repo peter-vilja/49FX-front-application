@@ -14,7 +14,9 @@ require.config({
             exports: 'Backbone'
         },
         'handlebars': {
-            exports: 'Handlebars'
+            init: function() {
+                return Handlebars;
+            }
         }
     },
     paths: {
