@@ -1,6 +1,6 @@
 define(['jquery', 'backbone', 'handlebars'], function($, Backbone, Handlebars) {
 	'use strict';
-	 var messageView = Backbone.View.extend({
+	var messageView = Backbone.View.extend({
 		tagName: 'article',
 		template: Handlebars.compile($('#message-template').html()),
 
@@ -9,6 +9,6 @@ define(['jquery', 'backbone', 'handlebars'], function($, Backbone, Handlebars) {
 			return this;
 		}
 	});
-
+	
 	return messageView;
 });
