@@ -9,6 +9,7 @@
 
 body
 	background-color: #F0F3F6
+	font-family: 'OpenSansLight'
 	//@include background(linear-gradient(135deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 80%, transparent 75%, transparent))
 	//background-attachment: fixed
 	//@include background-size(5px 5px)
@@ -19,23 +20,40 @@ body
 	height: 470px
 	margin: 0 auto
 	.wrapper
-		width: 960px*3
+		width: 960px*4
 		height: 470px
 
 		.background
-			background-image: url('../images/background.jpg')
 			float: left
 			width: 960px
 			height: 470px
+			position: relative
+			left: 0px
 			box-shadow: inset 50px 0px 90px 10px #F0F3F6, inset -50px 0px 90px 10px #F0F3F6
 			@include transition(all 0.7s ease-in-out)
 
 			&.first
 				background-position: 0px -160px
+				left: 0px
 			&.second
-				background-position: -960px -160px
+				background-position: 0px -160px
+				left: -960px
 			&.third
-				background-position: -960px*2 -160px
+				background-position: 0px -160px
+				left: -960px*2
+			&.fourth
+				background-position: 0px -160px
+				left: -960px*3
+#match
+	background-image: url('../images/background.jpg')
+#matching
+	background-image: url('../images/match.jpg')
+#sailing
+	background-image: url('../images/sailing.jpg')
+	@include background-size(120%)
+#morematch
+	background-image: url('../images/matchteam.jpg')
+	@include background-size(95%)
 
 // .team
 // 	width: 200px
@@ -70,7 +88,7 @@ body
 .headers
 	margin: -120px auto
 	max-width: 800px
-	min-height: 182px
+	min-height: 190px
 	z-index: 100
 	position: relative
 
@@ -86,12 +104,11 @@ header
 	&.log
 		color: #f1f1f1
 		float: left
+		font-family: 'OpenSansSemiBold'
 		.log
 			margin-left: 120px
 		.sail
 			font-size: 35px
-			font-weight: bold
-			font-style: italic
 
 .page-wrap
 	margin: 0 auto
@@ -109,10 +126,11 @@ header
 .about
 	background-color: #505459
 	color: #fff
-	height: 1000px
+	height: 900px
 	width: 100%
-	margin-top: 100px
+	margin-top: 30px
 	box-shadow: indianred 0px -3px 1px
+	font-size: 14px
 
 	.team, .boat
 		margin: auto
@@ -130,7 +148,6 @@ header
 				width: 250px
 				height: 200px
 				margin: auto
-				border: 2px solid indianred
 			.description
 				margin-top: 20px
 
@@ -145,7 +162,7 @@ header
 				background-position: -480px -160px
 
 	.boat
-		margin-top: 440px
+		margin-top: 400px
 		.left, .right
 			float: left
 			width: 320px
@@ -153,8 +170,9 @@ header
 		.left
 			color: #eee
 			font-size: 470px
-			max-height: 415px
+			max-height: 460px
 			overflow: hidden
+			margin-top: -65px
 		.right
 			width: 250px
 			margin-left: 30px
@@ -177,6 +195,48 @@ header
 	src: url('fonts/icomoon.woff') format('woff')
 	src: url('fonts/icomoon.ttf') format('truetype')
 	src: url('fonts/icomoon.svg#icomoon') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'OpenSansLight'
+	src: url('fonts/OpenSans-Light.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'OpenSansRegular'
+	src: url('fonts/OpenSans-Regular.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'OpenSansBold'
+	src: url('fonts/OpenSans-Bold.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'OpenSansSemiBold'
+	src: url('fonts/OpenSans-Semibold.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'OpenSansExtraBold'
+	src: url('fonts/OpenSans-ExtraBold.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'OpenSansItalic'
+	src: url('fonts/OpenSans-Italic.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'OpenSansLightItalic'
+	src: url('fonts/OpenSans-LightItalic.ttf') format('truetype')
 	font-weight: normal
 	font-style: normal
 

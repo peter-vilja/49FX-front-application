@@ -1,5 +1,12 @@
 define(['backbone', 'collections/messages', 'views/message-view'], function(Backbone, messages, messageView) {
 	'use strict';
+
+	$(function() {
+		$('.open').on('click', function() {
+			$('#fx-add').addClass('visible')
+		})
+	});
+
 	var App = Backbone.View.extend({
 		el: $('#fx-add'),
 		events: {
