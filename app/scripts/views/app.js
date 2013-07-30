@@ -27,7 +27,7 @@ define(['backbone', 'collections/messages', 'views/message-view'], function(Back
 
 		add: function(message) {
 			var view = new messageView({model: message})
-			$('#fx-messages').append(view.render().el)
+			$('#fx-messages').prepend(view.render().el)
 		},
 
 		show: function() {
