@@ -3,11 +3,11 @@
 
 require.config({
   shim: {
-    'underscore': {
+    'lodash': {
       exports: '_'
     },
     'backbone': {
-      deps: ['underscore',
+      deps: ['lodash',
              'jquery'],
       exports: 'Backbone'
     },
@@ -20,7 +20,7 @@ require.config({
   paths: {
     jquery: '../bower_components/jquery/jquery',
     backbone: '../bower_components/backbone/backbone',
-    underscore: '../bower_components/underscore/underscore',
+    lodash: '../bower_components/lodash/lodash',
     handlebars: '../bower_components/handlebars/handlebars'
   }
 });
