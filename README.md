@@ -31,7 +31,7 @@ $ grunt test
  - requirejs
  - backbone
  - handlebars
- - underscore
+ - lodash
  - jquery
 
 ### Testing ###
